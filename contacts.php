@@ -29,12 +29,14 @@
 
     <div class="container mx-auto py-8">
         <h1 class="font-bold text-4xl mb-4">Contacts</h1>
-        <div class="mb-4 flex justify-end space-x-4">
-            <a href="add_contact.php" class="text-blue-600 hover:underline">Add Contact</a>
-            <a href="#" class="text-blue-600 hover:underline active:text-blue-800">Contacts</a>
-            <a href="logout.php" class="text-blue-600 hover:underline">Logout</a>
+        <div class="grid grid-2 justify-end mb-4">
+            <div class="space-x-4">
+                <a href="add_contact.php" class="text-blue-600 hover:underline">Add Contact</a>
+                <a href="#" class="text-blue-600 hover:underline active:text-blue-800">Contacts</a>
+                <a href="logout.php" class="text-blue-600 hover:underline">Logout</a>
+            </div>
+            <input type="text" id="search" placeholder="Search contacts" class="w-full max-w-xs px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
         </div>
-        <input type="text" id="search" placeholder="Search contacts" class="w-full px-4 py-2 border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-600">
         <div class="overflow-x-auto">
             <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
                 <thead>
